@@ -1,0 +1,645 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Committee - ICETT '26</title>
+    <meta
+      name="description"
+      content="Meet the organizing committee of ICETT '26 - International Conference on Emerging Trends and Transformations in AI."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2563eb",
+              "primary-dark": "#1d4ed8",
+              accent: "#06b6d4",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "Inter", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white font-body overflow-x-hidden"
+  >
+    <div class="relative flex flex-col min-h-screen w-full">
+      <!-- Navigation Header -->
+      <header
+        class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-all duration-300"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16 md:h-20">
+            <a href="index.html" class="flex items-center gap-3 group">
+              <img
+                src="vitaplogored.png"
+                alt="VIT-AP Logo"
+                class="h-10 md:h-12 object-contain rounded bg-white p-1 shadow-md group-hover:shadow-lg transition-shadow"
+              />
+              <div class="hidden sm:block">
+                <img
+                  src="./icettlogo.png"
+                  class="h-10 md:h-12 object-contain rounded bg-white p-1 shadow-md group-hover:shadow-lg transition-shadow"
+                />
+              </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8">
+              <a
+                href="index.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Home</a
+              >
+              <a
+                href="call-for-papers.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Call for Papers</a
+              >
+              <a
+                href="committee.html"
+                class="nav-link text-primary font-semibold text-sm"
+                >Committee</a
+              >
+              <a
+                href="program.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Program</a
+              >
+              <a
+                href="registration.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Registration</a
+              >
+              <a
+                href="venue.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Venue</a
+              >
+              <a
+                href="contact.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Contact</a
+              >
+            </nav>
+
+            <div class="flex items-center gap-3">
+              <button
+                data-dark-toggle
+                class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                aria-label="Toggle dark mode"
+              >
+                <span
+                  class="material-symbols-outlined text-slate-600 dark:text-slate-300"
+                  >dark_mode</span
+                >
+              </button>
+              <a
+                href="registration.html"
+                class="hidden sm:flex btn-primary h-10 px-6 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary-dark transition-all"
+              >
+                Register Now
+              </a>
+              <button
+                data-mobile-menu
+                class="lg:hidden p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              >
+                <span
+                  class="material-symbols-outlined text-slate-900 dark:text-white"
+                  >menu</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          class="mobile-menu fixed inset-y-0 right-0 w-full max-w-sm bg-white dark:bg-slate-900 shadow-2xl lg:hidden z-50 p-6"
+        >
+          <div class="flex justify-end mb-8">
+            <button
+              data-mobile-menu
+              class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
+            >
+              <span class="material-symbols-outlined">close</span>
+            </button>
+          </div>
+          <nav class="flex flex-col gap-4">
+            <a
+              href="index.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Home</a
+            >
+            <a
+              href="call-for-papers.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Call for Papers</a
+            >
+            <a
+              href="committee.html"
+              class="text-primary font-semibold text-lg py-2"
+              >Committee</a
+            >
+            <a
+              href="program.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Program</a
+            >
+            <a
+              href="registration.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Registration</a
+            >
+            <a
+              href="venue.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Venue</a
+            >
+            <a
+              href="contact.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Contact</a
+            >
+            <a
+              href="registration.html"
+              class="btn-primary mt-4 h-12 flex items-center justify-center rounded-lg bg-primary text-white font-bold"
+              >Register Now</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <div class="flex flex-col items-center py-8 px-4 md:px-10 lg:px-20">
+        <div class="w-full max-w-[1280px]">
+          <section class="w-full">
+            <div class="@container w-full">
+              <div
+                class="relative flex min-h-[400px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-8 md:p-16"
+                style="
+                  background-image:
+                    linear-gradient(
+                      rgba(16, 22, 34, 0.7) 0%,
+                      rgba(16, 22, 34, 0.9) 100%
+                    ),
+                    url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAcOj74vXdkv3F2VaZabnhpZnCN0_M8q-q539gwwG9H0yFCrrPmOzhurYKzyhPGZlzPTAjEwV5tPpCDseml2PoUoq6ujkU9E7503EbRx_hei7g0yKR_UL4OJvWgEXGPv6ddsOFL9treXJGJO0oUKvg9VJY6wNGws9DyxsuGa52yqoLi14AxckbV39cEmvHrh3ExYD3eDwGeTjtLqgEONSLaqqNtmdcx8_blwSpQjQQ3GU_E8WfDGQbx5UFqnpF9FqcULLVjAUwEVto&quot;);
+                "
+              >
+                <div class="flex flex-col gap-4 text-center max-w-[800px]">
+                  <div
+                    class="inline-flex items-center gap-2 self-center rounded-full bg-white/10 px-4 py-1.5 backdrop-blur-sm border border-white/10"
+                  >
+                    <span
+                      class="material-symbols-outlined text-white text-[18px]"
+                      >calendar_month</span
+                    >
+                    <span class="text-white text-sm font-medium"
+                      >May 15 &amp; 17, 2026</span
+                    >
+                    <span class="w-[1px] h-3 bg-white/30 mx-1"></span>
+                    <span
+                      class="material-symbols-outlined text-white text-[18px]"
+                      >location_on</span
+                    >
+                    <span class="text-white text-sm font-medium"
+                      >Amaravati, Andhra Pradesh</span
+                    >
+                  </div>
+                  <h1
+                    class="text-white text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em]"
+                  >
+                    Organizing Committee
+                  </h1>
+                  <p
+                    class="text-gray-200 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto"
+                  >
+                    Meet the distinguished leaders and experts guiding ICETT '26
+                    towards excellence in AI research and innovation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Patronage -->
+      <section class="w-full py-16 px-4 md:px-10 bg-white dark:bg-[#151c2b]">
+        <div class="max-w-[1280px] mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Patronage</h2>
+            <p class="text-gray-500 dark:text-gray-400 text-lg">
+              Leadership supporting ICETT '26
+            </p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div
+              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            >
+              <h3 class="text-xl font-bold mb-3">Patron</h3>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <li>
+                  Dr. G. Viswanathan, Founder &amp; Chancellor, Vellore
+                  Institute of Technology
+                </li>
+              </ul>
+            </div>
+            <div
+              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            >
+              <h3 class="text-xl font-bold mb-3">Co-Patrons</h3>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <li>Mr. Sankar Viswanathan, Vice President, VIT University</li>
+                <li>Dr. Sekar Viswanathan, Vice President, VIT University</li>
+                <li>Dr. G. V. Selvam, Vice President, VIT University</li>
+                <li>
+                  Dr. P. Arulmozhivarman, Vice-Chancellor (i/c), VIT-AP
+                  University
+                </li>
+                <li>
+                  Dr. Jagadish Chandra Mudiganti, Registrar, VIT-AP University
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conference Leadership -->
+      <section
+        class="w-full py-16 px-4 md:px-10 bg-background-light dark:bg-background-dark"
+      >
+        <div class="max-w-[1280px] mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Conference Leadership
+            </h2>
+            <p class="text-gray-500 dark:text-gray-400 text-lg">
+              Chairs and conveners guiding the conference
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            >
+              <h3 class="text-lg font-bold mb-3">Convener</h3>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <li>Dr. S. Sudhakar Ilango, VIT-AP</li>
+                <li>Dr. Saroj Kumar Panigrahy, VIT-AP</li>
+              </ul>
+            </div>
+            <div
+              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            >
+              <h3 class="text-lg font-bold mb-3">General Chair</h3>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <li>Prof Bal Virdee, London Metropolitan University, UK</li>
+                <li>Dr. Hamid R Ara Bnia, The University of Georgia, USA</li>
+                <li>Dr. Hari Seetha, HAG-Professor, VIT-AP</li>
+                <li>MGPL Narayana, TCS (Retd), IEEE Hyderabad Section Chair</li>
+              </ul>
+            </div>
+            <div
+              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            >
+              <h3 class="text-lg font-bold mb-3">Chair Person</h3>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <li>
+                  Dr. Edara Sreenivasa Reddy, Higher Academic Grade- Professor,
+                  School of Computer Science and Engineering, VIT-AP University
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Committees -->
+      <section class="w-full py-16 px-4 md:px-10 bg-white dark:bg-[#151c2b]">
+        <div class="max-w-[1280px] mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Committees</h2>
+            <p class="text-gray-500 dark:text-gray-400 text-lg">
+              Organizing teams and support groups
+            </p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div
+              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            >
+              <h3 class="text-lg font-bold mb-3">Finance Committee</h3>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <li>Mr. Sai Kiran Nerella, CFO, VIT-AP</li>
+                <li>Dr. A. Rajya Lakshmi, VIT-AP</li>
+                <li>Dr. V. Srilakshmi, VIT-AP</li>
+              </ul>
+            </div>
+            <div
+              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            >
+              <h3 class="text-lg font-bold mb-3">Organizing Committee</h3>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <li>Dr. Sibi Chakkaravarthy S, VIT-AP</li>
+                <li>Dr. Chirra Venkata Rami Reddy, VIT-AP</li>
+                <li>Dr. Nagendra Panini Challa, VIT-AP</li>
+                <li>Dr. Radha Mohan Pattanayak, VIT-AP</li>
+                <li>Dr. Beebi Naseeba, VIT-AP</li>
+                <li>Dr. Kothandaraman, VIT-AP</li>
+                <li>Dr. T. Ramathulasi, VIT-AP</li>
+                <li>Dr. Posham Uppamma, VIT-AP</li>
+                <li>Dr. Adla Padma, VIT-AP</li>
+                <li>Dr. Dasari Sandeep, VIT-AP</li>
+                <li>Dr. S. Shalini, VIT-AP</li>
+                <li>Dr. Tejasree Ganji, VIT-AP</li>
+              </ul>
+            </div>
+            <div
+              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            >
+              <h3 class="text-lg font-bold mb-3">Registration Committee</h3>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <li>Dr. Bharat Bushan, VIT-AP</li>
+                <li>Dr. Visalakshi Annepu, VIT-AP</li>
+              </ul>
+            </div>
+            <div
+              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            >
+              <h3 class="text-lg font-bold mb-3">
+                International Relations Committee
+              </h3>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <li>Dr. Syed Khasim, VIT-AP</li>
+                <li>Dr. Guruprakash J, VIT-AP</li>
+              </ul>
+            </div>
+            <div
+              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            >
+              <h3 class="text-lg font-bold mb-3">
+                National Sponsorship Committee
+              </h3>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <li>Dr. Yamarthi Narasimha Rao, VIT-AP</li>
+                <li>Dr. Subhani Shaik</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advisory Committee -->
+      <section
+        class="w-full py-16 px-4 md:px-10 bg-background-light dark:bg-background-dark"
+      >
+        <div class="max-w-[1280px] mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Advisory Committee
+            </h2>
+            <p class="text-gray-500 dark:text-gray-400 text-lg">
+              Senior advisors supporting ICETT '26
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-[#1a2230] rounded-xl p-8 border border-gray-200 dark:border-gray-700"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-300"
+            >
+              <div>
+                Bala Prasad Peddigari, TCS, IEEE Hyderabad Section vice chair
+              </div>
+              <div>N. Venkatesh, Silicon Labs, IEEE Section Secretary</div>
+              <div>Dr. Valentina Emilia Balas, IEEE Senior Member, Romania</div>
+              <div>Dr. Giovanni Pau, Kore University of Enna, Italy</div>
+              <div>
+                Dr. Oludele Awodele, Babcock University, Ilisan-Remo, Nigeria
+              </div>
+              <div>Dr Laith Abualigah, Al al-Bat University, Jordan</div>
+              <div>Dr M Narasimha Murthy, IISc Bangalore, India</div>
+              <div>Dr Madhu Mutyam, IIT Madras, India</div>
+              <div>Dr. Satyendra Singh Yadav, NIT Meghalaya, India</div>
+              <div>Dr. Yogesh Kumar Meena, MNIT, Jaipur, India</div>
+              <div>Prof Danish Ali Khan, NIT Jamshedpur, Jharkhand, India</div>
+              <div>Dr. Bremnavis, Jazan University, Saudi Arabia</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Committee -->
+      <section class="w-full py-16 px-4 md:px-10 bg-white dark:bg-[#151c2b]">
+        <div class="max-w-[1280px] mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Technical Committee
+            </h2>
+            <p class="text-gray-500 dark:text-gray-400 text-lg">
+              Expert committee members supporting review and program quality
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-[#1a2230] rounded-xl p-8 border border-gray-200 dark:border-gray-700"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-300"
+            >
+              <div>Sreenivas jasti, TCS, IEEE Hyd Treasurer</div>
+              <div>N. Usha Rani, Professor, IEEE Guntur Chair</div>
+              <div>E. Sreenivasa Reddy, IEEE Guntur Immediate past chair</div>
+              <div>Y. Vijayalata, IEEE Hyderabad Immediate past chair</div>
+              <div>
+                Anasuya Sesha Roopa Devi Bhima, University Ave East, Canada
+              </div>
+              <div>Dr. Shiguo Lian, Telecom R&amp;D, Orange Labs, Chaina</div>
+              <div>
+                Dr. Adeleke Oluseye Adeniyi, Ledoke Akintola University of
+                Technology, Gbomoso, Nigeria
+              </div>
+              <div>
+                Prof. Sattar J Aboud, IT Advisor, Iraqi Concill of
+                Representative, Iraq
+              </div>
+              <div>
+                Prof. Salhuddin Khan, King Saudi University, Saudi Arabia
+              </div>
+              <div>
+                Dr S V Rao, Indian Institute of Technology Guwahati, India
+              </div>
+              <div>
+                Dr R Dhana Lakshmi, NITPY Campus, Thiruvettakudy, Puducherry,
+                India
+              </div>
+              <div>T. Rama Krishnudu, NIT Warangal, India</div>
+              <div>Dr. C. Krishna Mohan, IIT, Hyderabad, India</div>
+              <div>Dr. K. Chandrasekharan, NIT Surathkal, Karnataka, India</div>
+              <div>Dr. D. Vsumathi, JNTUH, Telangana, India</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="bg-white dark:bg-[#0b0f17] border-t border-[#f0f2f4] dark:border-gray-800 pt-16 pb-8 mt-auto"
+      >
+        <div class="layout-container max-w-[1280px] mx-auto px-4 md:px-10">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16"
+          >
+            <!-- Col 1: Brand -->
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-2 text-primary dark:text-white">
+                <span class="material-symbols-outlined text-3xl"
+                  >neurology</span
+                >
+                <span class="text-xl font-bold tracking-tight">ICETT '26</span>
+              </div>
+              <p
+                class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed"
+              >
+                The leading international conference for Artificial Intelligence
+                research, bridging theory and practice.
+              </p>
+            </div>
+            <!-- Col 2: Links -->
+            <div class="flex flex-col gap-4">
+              <h4 class="text-[#111318] dark:text-white font-bold text-base">
+                Quick Links
+              </h4>
+              <ul class="flex flex-col gap-2">
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="call-for-papers.html"
+                    >Call for Papers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="committee.html"
+                    >Committee</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="registration.html"
+                    >Registration</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="venue.html"
+                    >Venue</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Col 3: Legal -->
+            <div class="flex flex-col gap-4">
+              <h4 class="text-[#111318] dark:text-white font-bold text-base">
+                Legal
+              </h4>
+              <ul class="flex flex-col gap-2">
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="#"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="#"
+                    >Terms of Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="#"
+                    >Code of Conduct</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Col 4: Contact -->
+            <div class="flex flex-col gap-4">
+              <h4 class="text-[#111318] dark:text-white font-bold text-base">
+                Contact Us
+              </h4>
+              <div class="flex flex-col gap-2">
+                <a
+                  class="flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                  href="https://www.icett.in"
+                >
+                  <span class="material-symbols-outlined text-sm"
+                    >language</span
+                  >
+                  www.icett.in
+                </a>
+                <div
+                  class="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm"
+                >
+                  <span class="material-symbols-outlined text-sm"
+                    >location_on</span
+                  >
+                  VIT-AP University, Amaravati
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-100 dark:border-gray-800 gap-4"
+          >
+            <p class="text-gray-400 text-sm">
+              © 2026 ICETT. All rights reserved.
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="text-gray-400 hover:text-primary transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined">public</span></a
+              >
+              <a
+                class="text-gray-400 hover:text-primary transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined">share</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

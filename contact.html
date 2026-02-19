@@ -1,0 +1,551 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - ICETT '26</title>
+    <meta
+      name="description"
+      content="Contact the organizing committee of ICETT '26 - International Conference on Emerging Trends and Transformations in AI."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2563eb",
+              "primary-dark": "#1d4ed8",
+              accent: "#06b6d4",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "Inter", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white font-body overflow-x-hidden"
+  >
+    <div class="relative flex flex-col min-h-screen w-full">
+      <!-- Navigation Header -->
+      <header
+        class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-all duration-300"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16 md:h-20">
+            <a href="index.html" class="flex items-center gap-3 group">
+              <img
+                src="vitaplogored.png"
+                alt="VIT-AP Logo"
+                class="h-10 md:h-12 object-contain rounded bg-white p-1 shadow-md group-hover:shadow-lg transition-shadow"
+              />
+              <div class="hidden sm:block">
+                <img
+                  src="./icettlogo.png"
+                  class="h-10 md:h-12 object-contain rounded bg-white p-1 shadow-md group-hover:shadow-lg transition-shadow"
+                />
+              </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8">
+              <a
+                href="index.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Home</a
+              >
+              <a
+                href="call-for-papers.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Call for Papers</a
+              >
+              <a
+                href="committee.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Committee</a
+              >
+              <a
+                href="program.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Program</a
+              >
+              <a
+                href="registration.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Registration</a
+              >
+              <a
+                href="venue.html"
+                class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors"
+                >Venue</a
+              >
+              <a
+                href="contact.html"
+                class="nav-link text-primary font-semibold text-sm"
+                >Contact</a
+              >
+            </nav>
+
+            <div class="flex items-center gap-3">
+              <button
+                data-dark-toggle
+                class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                aria-label="Toggle dark mode"
+              >
+                <span
+                  class="material-symbols-outlined text-slate-600 dark:text-slate-300"
+                  >dark_mode</span
+                >
+              </button>
+              <a
+                href="registration.html"
+                class="hidden sm:flex btn-primary h-10 px-6 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary-dark transition-all"
+              >
+                Register Now
+              </a>
+              <button
+                data-mobile-menu
+                class="lg:hidden p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              >
+                <span
+                  class="material-symbols-outlined text-slate-900 dark:text-white"
+                  >menu</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          class="mobile-menu fixed inset-y-0 right-0 w-full max-w-sm bg-white dark:bg-slate-900 shadow-2xl lg:hidden z-50 p-6"
+        >
+          <div class="flex justify-end mb-8">
+            <button
+              data-mobile-menu
+              class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
+            >
+              <span class="material-symbols-outlined">close</span>
+            </button>
+          </div>
+          <nav class="flex flex-col gap-4">
+            <a
+              href="index.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Home</a
+            >
+            <a
+              href="call-for-papers.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Call for Papers</a
+            >
+            <a
+              href="committee.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Committee</a
+            >
+            <a
+              href="program.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Program</a
+            >
+            <a
+              href="registration.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Registration</a
+            >
+            <a
+              href="venue.html"
+              class="text-slate-600 dark:text-slate-300 hover:text-primary text-lg py-2 transition-colors"
+              >Venue</a
+            >
+            <a
+              href="contact.html"
+              class="text-primary font-semibold text-lg py-2"
+              >Contact</a
+            >
+            <a
+              href="registration.html"
+              class="btn-primary mt-4 h-12 flex items-center justify-center rounded-lg bg-primary text-white font-bold"
+              >Register Now</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+
+      <section class="w-full">
+        <div class="@container w-full">
+          <div
+            class="relative flex min-h-[400px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-8 md:p-16"
+            style="
+              background-image:
+                linear-gradient(
+                  rgba(16, 22, 34, 0.7) 0%,
+                  rgba(16, 22, 34, 0.9) 100%
+                ),
+                url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAcOj74vXdkv3F2VaZabnhpZnCN0_M8q-q539gwwG9H0yFCrrPmOzhurYKzyhPGZlzPTAjEwV5tPpCDseml2PoUoq6ujkU9E7503EbRx_hei7g0yKR_UL4OJvWgEXGPv6ddsOFL9treXJGJO0oUKvg9VJY6wNGws9DyxsuGa52yqoLi14AxckbV39cEmvHrh3ExYD3eDwGeTjtLqgEONSLaqqNtmdcx8_blwSpQjQQ3GU_E8WfDGQbx5UFqnpF9FqcULLVjAUwEVto&quot;);
+            "
+          >
+            <div class="flex flex-col gap-4 text-center max-w-[800px]">
+              <div
+                class="inline-flex items-center gap-2 self-center rounded-full bg-white/10 px-4 py-1.5 backdrop-blur-sm border border-white/10"
+              >
+                <span class="material-symbols-outlined text-white text-[18px]"
+                  >calendar_month</span
+                >
+                <span class="text-white text-sm font-medium"
+                  >May 15 &amp; 17, 2026</span
+                >
+                <span class="w-[1px] h-3 bg-white/30 mx-1"></span>
+                <span class="material-symbols-outlined text-white text-[18px]"
+                  >location_on</span
+                >
+                <span class="text-white text-sm font-medium"
+                  >Amaravati, Andhra Pradesh</span
+                >
+              </div>
+              <h1
+                class="text-white text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em]"
+              >
+                Contact Us
+              </h1>
+              <p
+                class="text-gray-200 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto"
+              >
+                Have questions? Reach out to the organizing committee for
+                assistance with submissions, registration, or venue details.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Content -->
+      <section class="w-full py-16 px-4 md:px-10 bg-white dark:bg-[#151c2b]">
+        <div
+          class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12"
+        >
+          <!-- Contact Form -->
+          <div
+            class="bg-background-light dark:bg-background-dark rounded-xl p-8 border border-[#e5e7eb] dark:border-[#2a3441]"
+          >
+            <h2 class="text-2xl font-bold mb-6 text-[#111318] dark:text-white">
+              Send us a Message
+            </h2>
+            <form class="flex flex-col gap-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="flex flex-col gap-1">
+                  <span
+                    class="text-sm font-semibold text-gray-600 dark:text-gray-400"
+                    >First Name</span
+                  >
+                  <input
+                    type="text"
+                    class="rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1a2230] p-2.5 text-sm focus:ring-primary focus:border-primary"
+                    placeholder="Enter first name"
+                  />
+                </label>
+                <label class="flex flex-col gap-1">
+                  <span
+                    class="text-sm font-semibold text-gray-600 dark:text-gray-400"
+                    >Last Name</span
+                  >
+                  <input
+                    type="text"
+                    class="rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1a2230] p-2.5 text-sm focus:ring-primary focus:border-primary"
+                    placeholder="Enter last name"
+                  />
+                </label>
+              </div>
+              <label class="flex flex-col gap-1">
+                <span
+                  class="text-sm font-semibold text-gray-600 dark:text-gray-400"
+                  >Email Address</span
+                >
+                <input
+                  type="email"
+                  class="rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1a2230] p-2.5 text-sm focus:ring-primary focus:border-primary"
+                  placeholder="you@example.com"
+                />
+              </label>
+              <label class="flex flex-col gap-1">
+                <span
+                  class="text-sm font-semibold text-gray-600 dark:text-gray-400"
+                  >Subject</span
+                >
+                <select
+                  class="rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1a2230] p-2.5 text-sm focus:ring-primary focus:border-primary"
+                >
+                  <option>General Inquiry</option>
+                  <option>Paper Submission</option>
+                  <option>Registration Issue</option>
+                  <option>Sponsorship</option>
+                </select>
+              </label>
+              <label class="flex flex-col gap-1">
+                <span
+                  class="text-sm font-semibold text-gray-600 dark:text-gray-400"
+                  >Message</span
+                >
+                <textarea
+                  rows="4"
+                  class="rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1a2230] p-2.5 text-sm focus:ring-primary focus:border-primary"
+                  placeholder="How can we help you?"
+                ></textarea>
+              </label>
+              <button
+                type="button"
+                class="mt-2 text-white bg-primary hover:bg-blue-700 font-bold rounded-lg text-sm px-5 py-3 text-center transition-colors"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info & Map -->
+          <div class="flex flex-col gap-8">
+            <div>
+              <h2
+                class="text-2xl font-bold mb-6 text-[#111318] dark:text-white"
+              >
+                Contact Information
+              </h2>
+              <div class="flex flex-col gap-4">
+                <div
+                  class="flex items-start gap-4 p-4 rounded-xl bg-background-light dark:bg-background-dark border border-[#e5e7eb] dark:border-[#2a3441]"
+                >
+                  <div
+                    class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0"
+                  >
+                    <span class="material-symbols-outlined">location_on</span>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-[#111318] dark:text-white">
+                      Address
+                    </h3>
+                    <p class="text-sm text-[#616f89] dark:text-gray-400">
+                      VIT-AP University, G-30, Inavolu<br />Beside AP
+                      Secretariat Amaravati<br />Andhra Pradesh 522241
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-4 rounded-xl bg-background-light dark:bg-background-dark border border-[#e5e7eb] dark:border-[#2a3441]"
+                >
+                  <div
+                    class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0"
+                  >
+                    <span class="material-symbols-outlined">mail</span>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-[#111318] dark:text-white">
+                      Website
+                    </h3>
+                    <a
+                      class="text-sm text-primary hover:underline"
+                      href="https://www.icett.in"
+                      >www.icett.in</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-4 rounded-xl bg-background-light dark:bg-background-dark border border-[#e5e7eb] dark:border-[#2a3441]"
+                >
+                  <div
+                    class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0"
+                  >
+                    <span class="material-symbols-outlined">call</span>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-[#111318] dark:text-white">
+                      Contact
+                    </h3>
+                    <p class="text-sm text-[#616f89] dark:text-gray-400">
+                      Organized by SCOPE, VIT-AP University
+                    </p>
+                    <p class="text-sm text-[#616f89] dark:text-gray-400">
+                      More contact details will be announced on the website.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Map -->
+            <div
+              class="rounded-xl overflow-hidden shadow-lg h-[300px] border border-[#e5e7eb] dark:border-[#2a3441]"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5399.639238730017!2d80.4991965!3d16.4970554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f27d40f21c55%3A0x1490eacd54859850!2sVIT-AP%20University!5e1!3m2!1sen!2sin!4v1765711965492!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="bg-white dark:bg-[#0b0f17] border-t border-[#f0f2f4] dark:border-gray-800 pt-16 pb-8 mt-auto"
+      >
+        <div class="layout-container max-w-[1280px] mx-auto px-4 md:px-10">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16"
+          >
+            <!-- Col 1: Brand -->
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-2 text-primary dark:text-white">
+                <span class="material-symbols-outlined text-3xl"
+                  >neurology</span
+                >
+                <span class="text-xl font-bold tracking-tight">ICETT '26</span>
+              </div>
+              <p
+                class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed"
+              >
+                The leading international conference for Artificial Intelligence
+                research, bridging theory and practice.
+              </p>
+            </div>
+            <!-- Col 2: Links -->
+            <div class="flex flex-col gap-4">
+              <h4 class="text-[#111318] dark:text-white font-bold text-base">
+                Quick Links
+              </h4>
+              <ul class="flex flex-col gap-2">
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="call-for-papers.html"
+                    >Call for Papers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="committee.html"
+                    >Committee</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="registration.html"
+                    >Registration</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="venue.html"
+                    >Venue</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Col 3: Legal -->
+            <div class="flex flex-col gap-4">
+              <h4 class="text-[#111318] dark:text-white font-bold text-base">
+                Legal
+              </h4>
+              <ul class="flex flex-col gap-2">
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="#"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="#"
+                    >Terms of Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                    href="#"
+                    >Code of Conduct</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Col 4: Contact -->
+            <div class="flex flex-col gap-4">
+              <h4 class="text-[#111318] dark:text-white font-bold text-base">
+                Contact Us
+              </h4>
+              <div class="flex flex-col gap-2">
+                <a
+                  class="flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
+                  href="https://www.icett.in"
+                >
+                  <span class="material-symbols-outlined text-sm"
+                    >language</span
+                  >
+                  www.icett.in
+                </a>
+                <div
+                  class="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm"
+                >
+                  <span class="material-symbols-outlined text-sm"
+                    >location_on</span
+                  >
+                  VIT-AP University, Amaravati
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-100 dark:border-gray-800 gap-4"
+          >
+            <p class="text-gray-400 text-sm">
+              © 2026 ICETT. All rights reserved.
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="text-gray-400 hover:text-primary transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined">public</span></a
+              >
+              <a
+                class="text-gray-400 hover:text-primary transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined">share</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

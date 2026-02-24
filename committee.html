@@ -42,6 +42,671 @@
         },
       };
     </script>
+    <script>
+      const patronageData = {
+        patron: [
+          {
+            name: "Dr. G. Viswanathan",
+            designation:
+              "Founder & Chancellor, Vellore Institute of Technology",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+        ],
+        coPatrons: [
+          {
+            name: "Mr. Sankar Viswanathan",
+            designation: "Vice President, VIT University",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Sekar Viswanathan",
+            designation: "Vice President, VIT University",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. G. V. Selvam",
+            designation: "Vice President, VIT University",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. P. Arulmozhivarman",
+            designation: "Vice-Chancellor (i/c), VIT-AP University",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Jagadish Chandra Mudiganti",
+            designation: "Registrar, VIT-AP University",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+        ],
+      };
+
+      const conferenceLeadershipData = {
+        conveners: [
+          {
+            name: "Dr. S. Sudhakar Ilango",
+            designation: "Convener, VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Saroj Kumar Panigrahy",
+            designation: "Convener, VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+        ],
+        generalChairs: [
+          {
+            name: "Prof Bal Virdee",
+            designation: "London Metropolitan University, UK",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Hamid R Ara Bnia",
+            designation: "The University of Georgia, USA",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Hari Seetha",
+            designation: "HAG-Professor, VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "MGPL Narayana",
+            designation: "TCS (Retd), IEEE Hyderabad Section Chair",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+        ],
+        chairPerson: [
+          {
+            name: "Dr. Edara Sreenivasa Reddy",
+            designation: "HAG Professor, School of CSE, VIT-AP University",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+        ],
+      };
+
+      const committeeData = {
+        financeCommittee: [
+          {
+            name: "Mr. Sai Kiran Nerella",
+            designation: "CFO, VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. A. Rajya Lakshmi",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. V. Srilakshmi",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+        ],
+
+        organizingCommittee: [
+          {
+            name: "Dr. Sibi Chakkaravarthy S",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Chirra Venkata Rami Reddy",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Nagendra Panini Challa",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Radha Mohan Pattanayak",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Beebi Naseeba",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Kothandaraman",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. T. Ramathulasi",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Posham Uppamma",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Adla Padma",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Dasari Sandeep",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. S. Shalini",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Tejasree Ganji",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+        ],
+
+        registrationCommittee: [
+          {
+            name: "Dr. Bharat Bushan",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Visalakshi Annepu",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+        ],
+
+        internationalRelationsCommittee: [
+          {
+            name: "Dr. Syed Khasim",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Guruprakash J",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+        ],
+
+        nationalSponsorshipCommittee: [
+          {
+            name: "Dr. Yamarthi Narasimha Rao",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+          {
+            name: "Dr. Subhani Shaik",
+            designation: "VIT-AP",
+            photo: "https://via.placeholder.com/300",
+            linkedin: "#",
+          },
+        ],
+      };
+
+      const advisoryCommitteeData = [
+        {
+          name: "Bala Prasad Peddigari",
+          designation: "TCS, IEEE Hyderabad Section Vice Chair",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "N. Venkatesh",
+          designation: "Silicon Labs, IEEE Section Secretary",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Dr. Valentina Emilia Balas",
+          designation: "IEEE Senior Member, Romania",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Dr. Giovanni Pau",
+          designation: "Kore University of Enna, Italy",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Dr. Oludele Awodele",
+          designation: "Babcock University, Nigeria",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Dr. Laith Abualigah",
+          designation: "Al al-Bat University, Jordan",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Dr. M Narasimha Murthy",
+          designation: "IISc Bangalore, India",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Dr. Madhu Mutyam",
+          designation: "IIT Madras, India",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Dr. Satyendra Singh Yadav",
+          designation: "NIT Meghalaya, India",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Dr. Yogesh Kumar Meena",
+          designation: "MNIT Jaipur, India",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Prof Danish Ali Khan",
+          designation: "NIT Jamshedpur, India",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Dr. Bremnavis",
+          designation: "Jazan University, Saudi Arabia",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+      ];
+
+      const technicalCommitteeData = [
+        {
+          name: "Ming Yang",
+          designation: "Kennesaw State University, Atlanta, USA",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Bhupesh Kumar Dewangan",
+          designation: "OP Jindal University, Raigarh, India",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Sanjay Misra",
+          designation: "Covenant University, Ota, Nigeria",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Milos Stojmenovic",
+          designation: "Singidunum University, Serbia",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Georgios Tsaramirsis",
+          designation: "Higher Colleges of Technology, Abu Dhabi",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Sven Groppe",
+          designation: "University of Lübeck, Germany",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Mohammad Yamin",
+          designation: "Abdulaziz University, Jeddah, Saudi Arabia",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Mukesh Misra",
+          designation: "Massey University, New Zealand",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Neha Mohanty",
+          designation: "New Jersey Institute of Technology, USA",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Jinghua Groppe",
+          designation: "University of Lübeck, Germany",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Abdulrhman Alshareef",
+          designation: "King Abdulaziz University",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Gourav Gupta",
+          designation: "Massey University, Palmerston North, New Zealand",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Lal Hussain",
+          designation: "University of Azad Jammu and Kashmir, Pakistan",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Maria Avilés",
+          designation: "Gijon Hospital, Asturias, Spain",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Izzat Al-Darraji",
+          designation: "University of Baghdad, Baghdad",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Lie Li",
+          designation: "Kennesaw State University, Atlanta, USA",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Abdulsattar Abdullah Hamad",
+          designation: "University of Samarra, Iraq",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Vicente Garcia Diaz",
+          designation: "University of Oviedo, Spain",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Oscar Castillo",
+          designation: "Tijuana Institute of Technology, Mexico",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "J P Das",
+          designation: "University of Alberta, Canada",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Rajkumar Singh Rathore",
+          designation: "Cardiff Met University, London, UK",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Osamah Ibrahim Khalaf",
+          designation: "Al-Nahrain University, Baghdad, Iraq",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Dr. Udit Mamodiya",
+          designation: "Poornima University, India",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Ghaida Muttashar Abdulsahib",
+          designation: "University of Technology, Baghdad, Iraq",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Sameer Algburi",
+          designation: "Al-Kitab University, Iraq",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+        {
+          name: "Habib Hamam",
+          designation: "Faculty of Engineering, University of Moncton, Canada",
+          photo: "https://via.placeholder.com/300",
+          linkedin: "#",
+        },
+      ];
+
+      function createFacultyCard(member, theme) {
+        const card = document.createElement("div");
+
+        card.className = `
+  group
+  w-[calc(50%-1.5rem)] 
+lg:w-[calc(25%-1.5rem)]
+ min-h-[300px]
+  bg-white dark:bg-slate-800 
+  rounded-2xl 
+  p-6 
+  shadow-md 
+  transition-all 
+  duration-300 
+  ease-out
+  border-t-4 ${theme.border}
+  flex 
+  flex-col 
+  items-center 
+  text-center
+  transform
+  hover:-translate-y-2
+  hover:shadow-2xl
+  opacity-0
+  translate-y-8
+`;
+        card.style.transitionProperty = "transform, box-shadow";
+
+        card.innerHTML = `
+    <img 
+      src="${member.photo}" 
+      alt="${member.name}" 
+      class="w-28 h-28 rounded-full object-cover mb-4 border-4 border-white shadow-md transition-transform duration-300 group-hover:scale-110"
+    />
+
+    <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-1">
+      ${member.name}
+    </h3>
+
+    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">
+      ${member.designation}
+    </p>
+
+    <a 
+      href="${member.linkedin}" 
+      target="_blank"
+      class="px-4 py-2 rounded-lg text-white text-sm font-semibold ${theme.btn} transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+    >
+      LinkedIn
+    </a>
+  `;
+        card.addEventListener("mouseenter", () => {
+          card.style.boxShadow = "0 20px 40px rgba(0,0,0,0.15)";
+        });
+
+        card.addEventListener("mouseleave", () => {
+          card.style.boxShadow = "";
+        });
+
+        return card;
+      }
+
+      function initScrollReveal() {
+        const cards = document.querySelectorAll(".group");
+
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("reveal-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.15,
+          },
+        );
+
+        cards.forEach((card) => observer.observe(card));
+      }
+
+      const themes = {
+        patronage: {
+          border: "border-primary",
+          bgSoft: "bg-primary/5 dark:bg-primary/10",
+          btn: "bg-primary hover:bg-primary-dark",
+        },
+        conference: {
+          border: "border-cyan-500",
+          bgSoft: "bg-cyan-500/5 dark:bg-cyan-500/10",
+          btn: "bg-cyan-600 hover:bg-cyan-700",
+        },
+        committee: {
+          border: "border-indigo-500",
+          bgSoft: "bg-indigo-500/5 dark:bg-indigo-500/10",
+          btn: "bg-indigo-600 hover:bg-indigo-700",
+        },
+        advisory: {
+          border: "border-emerald-500",
+          bgSoft: "bg-emerald-500/5 dark:bg-emerald-500/10",
+          btn: "bg-emerald-600 hover:bg-emerald-700",
+        },
+        technical: {
+          border: "border-rose-500",
+          bgSoft: "bg-rose-500/5 dark:bg-rose-500/10",
+          btn: "bg-rose-600 hover:bg-rose-700",
+        },
+      };
+
+      function createGrid() {
+        const grid = document.createElement("div");
+
+        grid.className = `
+    flex 
+    flex-wrap 
+    justify-center 
+    items-stretch
+    gap-6 
+    mt-6
+  `;
+
+        return grid;
+      }
+
+      function renderSection(containerId, data, theme) {
+        const container = document.getElementById(containerId);
+
+        for (const category in data) {
+          // Category Title
+          const heading = document.createElement("h3");
+          heading.className =
+            "text-3xl font-bold mt-12 mb-4 text-slate-800 dark:text-white text-center";
+          heading.innerText = formatCategoryTitle(category);
+
+          container.appendChild(heading);
+
+          const grid = createGrid();
+
+          data[category].forEach((member) => {
+            const card = createFacultyCard(member, theme);
+            grid.appendChild(card);
+          });
+
+          container.appendChild(grid);
+        }
+      }
+
+      function renderAdvisory(containerId, data, theme) {
+        const container = document.getElementById(containerId);
+
+        const grid = createGrid();
+
+        data.forEach((member) => {
+          const card = createFacultyCard(member, theme);
+          grid.appendChild(card);
+        });
+
+        container.appendChild(grid);
+      }
+
+      function formatCategoryTitle(key) {
+        return key
+          .replace(/([A-Z])/g, " $1")
+          .replace(/^./, (str) => str.toUpperCase());
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        renderSection("patronage-section", patronageData, themes.patronage);
+
+        renderSection(
+          "conference-section",
+          conferenceLeadershipData,
+          themes.conference,
+        );
+
+        renderSection("committee-section", committeeData, themes.committee);
+
+        renderAdvisory(
+          "advisory-section",
+          advisoryCommitteeData,
+          themes.advisory,
+        );
+
+        renderAdvisory(
+          "technical-section",
+          technicalCommitteeData,
+          themes.technical,
+        );
+        initScrollReveal();
+      });
+    </script>
   </head>
 
   <body
@@ -210,33 +875,10 @@
                 "
               >
                 <div class="flex flex-col gap-4 text-center max-w-[800px]">
-                  <div
-                    class="inline-flex items-center gap-2 self-center rounded-full bg-white/10 px-4 py-1.5 backdrop-blur-sm border border-white/10"
-                  >
-                    <span
-                      class="material-symbols-outlined text-white text-[18px]"
-                      >calendar_month</span
-                    >
-                    <span class="text-white text-sm font-medium"
-                      >May 15 &amp; 17, 2026</span
-                    >
-                    <span class="w-[1px] h-3 bg-white/30 mx-1"></span>
-                    <span
-                      class="material-symbols-outlined text-white text-[18px]"
-                      >location_on</span
-                    >
-                    <span class="text-white text-sm font-medium"
-                      >Amaravati, Andhra Pradesh</span
-                    >
-                  </div>
-                  <h1
-                    class="text-white text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em]"
-                  >
+                  <h1 class="text-white text-4xl md:text-6xl font-black">
                     Organizing Committee
                   </h1>
-                  <p
-                    class="text-gray-200 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto"
-                  >
+                  <p class="text-gray-200 text-lg md:text-xl max-w-2xl mx-auto">
                     Meet the distinguished leaders and experts guiding ICETT '26
                     towards excellence in AI research and innovation.
                   </p>
@@ -256,35 +898,10 @@
               Leadership supporting ICETT '26
             </p>
           </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div
-              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
-            >
-              <h3 class="text-xl font-bold mb-3">Patron</h3>
-              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <li>
-                  Dr. G. Viswanathan, Founder &amp; Chancellor, Vellore
-                  Institute of Technology
-                </li>
-              </ul>
-            </div>
-            <div
-              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
-            >
-              <h3 class="text-xl font-bold mb-3">Co-Patrons</h3>
-              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <li>Mr. Sankar Viswanathan, Vice President, VIT University</li>
-                <li>Dr. Sekar Viswanathan, Vice President, VIT University</li>
-                <li>Dr. G. V. Selvam, Vice President, VIT University</li>
-                <li>
-                  Dr. P. Arulmozhivarman, Vice-Chancellor (i/c), VIT-AP
-                  University
-                </li>
-                <li>
-                  Dr. Jagadish Chandra Mudiganti, Registrar, VIT-AP University
-                </li>
-              </ul>
-            </div>
+          <div
+            class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+          >
+            <div id="patronage-section"></div>
           </div>
         </div>
       </section>
@@ -302,38 +919,10 @@
               Chairs and conveners guiding the conference
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div
-              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
-            >
-              <h3 class="text-lg font-bold mb-3">Convener</h3>
-              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <li>Dr. S. Sudhakar Ilango, VIT-AP</li>
-                <li>Dr. Saroj Kumar Panigrahy, VIT-AP</li>
-              </ul>
-            </div>
-            <div
-              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
-            >
-              <h3 class="text-lg font-bold mb-3">General Chair</h3>
-              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <li>Prof Bal Virdee, London Metropolitan University, UK</li>
-                <li>Dr. Hamid R Ara Bnia, The University of Georgia, USA</li>
-                <li>Dr. Hari Seetha, HAG-Professor, VIT-AP</li>
-                <li>MGPL Narayana, TCS (Retd), IEEE Hyderabad Section Chair</li>
-              </ul>
-            </div>
-            <div
-              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
-            >
-              <h3 class="text-lg font-bold mb-3">Chair Person</h3>
-              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <li>
-                  Dr. Edara Sreenivasa Reddy, Higher Academic Grade- Professor,
-                  School of Computer Science and Engineering, VIT-AP University
-                </li>
-              </ul>
-            </div>
+          <div
+            class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+          >
+            <div id="conference-section"></div>
           </div>
         </div>
       </section>
@@ -347,67 +936,10 @@
               Organizing teams and support groups
             </p>
           </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div
-              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
-            >
-              <h3 class="text-lg font-bold mb-3">Finance Committee</h3>
-              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <li>Mr. Sai Kiran Nerella, CFO, VIT-AP</li>
-                <li>Dr. A. Rajya Lakshmi, VIT-AP</li>
-                <li>Dr. V. Srilakshmi, VIT-AP</li>
-              </ul>
-            </div>
-            <div
-              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
-            >
-              <h3 class="text-lg font-bold mb-3">Organizing Committee</h3>
-              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <li>Dr. Sibi Chakkaravarthy S, VIT-AP</li>
-                <li>Dr. Chirra Venkata Rami Reddy, VIT-AP</li>
-                <li>Dr. Nagendra Panini Challa, VIT-AP</li>
-                <li>Dr. Radha Mohan Pattanayak, VIT-AP</li>
-                <li>Dr. Beebi Naseeba, VIT-AP</li>
-                <li>Dr. Kothandaraman, VIT-AP</li>
-                <li>Dr. T. Ramathulasi, VIT-AP</li>
-                <li>Dr. Posham Uppamma, VIT-AP</li>
-                <li>Dr. Adla Padma, VIT-AP</li>
-                <li>Dr. Dasari Sandeep, VIT-AP</li>
-                <li>Dr. S. Shalini, VIT-AP</li>
-                <li>Dr. Tejasree Ganji, VIT-AP</li>
-              </ul>
-            </div>
-            <div
-              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
-            >
-              <h3 class="text-lg font-bold mb-3">Registration Committee</h3>
-              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <li>Dr. Bharat Bushan, VIT-AP</li>
-                <li>Dr. Visalakshi Annepu, VIT-AP</li>
-              </ul>
-            </div>
-            <div
-              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
-            >
-              <h3 class="text-lg font-bold mb-3">
-                International Relations Committee
-              </h3>
-              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <li>Dr. Syed Khasim, VIT-AP</li>
-                <li>Dr. Guruprakash J, VIT-AP</li>
-              </ul>
-            </div>
-            <div
-              class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
-            >
-              <h3 class="text-lg font-bold mb-3">
-                National Sponsorship Committee
-              </h3>
-              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <li>Dr. Yamarthi Narasimha Rao, VIT-AP</li>
-                <li>Dr. Subhani Shaik</li>
-              </ul>
-            </div>
+          <div
+            class="bg-white dark:bg-[#1a2230] rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+          >
+            <div id="committee-section"></div>
           </div>
         </div>
       </section>
@@ -428,26 +960,7 @@
           <div
             class="bg-white dark:bg-[#1a2230] rounded-xl p-8 border border-gray-200 dark:border-gray-700"
           >
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-300"
-            >
-              <div>
-                Bala Prasad Peddigari, TCS, IEEE Hyderabad Section vice chair
-              </div>
-              <div>N. Venkatesh, Silicon Labs, IEEE Section Secretary</div>
-              <div>Dr. Valentina Emilia Balas, IEEE Senior Member, Romania</div>
-              <div>Dr. Giovanni Pau, Kore University of Enna, Italy</div>
-              <div>
-                Dr. Oludele Awodele, Babcock University, Ilisan-Remo, Nigeria
-              </div>
-              <div>Dr Laith Abualigah, Al al-Bat University, Jordan</div>
-              <div>Dr M Narasimha Murthy, IISc Bangalore, India</div>
-              <div>Dr Madhu Mutyam, IIT Madras, India</div>
-              <div>Dr. Satyendra Singh Yadav, NIT Meghalaya, India</div>
-              <div>Dr. Yogesh Kumar Meena, MNIT, Jaipur, India</div>
-              <div>Prof Danish Ali Khan, NIT Jamshedpur, Jharkhand, India</div>
-              <div>Dr. Bremnavis, Jazan University, Saudi Arabia</div>
-            </div>
+            <div id="advisory-section"></div>
           </div>
         </div>
       </section>
@@ -466,40 +979,7 @@
           <div
             class="bg-white dark:bg-[#1a2230] rounded-xl p-8 border border-gray-200 dark:border-gray-700"
           >
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-300"
-            >
-              <div>Sreenivas jasti, TCS, IEEE Hyd Treasurer</div>
-              <div>N. Usha Rani, Professor, IEEE Guntur Chair</div>
-              <div>E. Sreenivasa Reddy, IEEE Guntur Immediate past chair</div>
-              <div>Y. Vijayalata, IEEE Hyderabad Immediate past chair</div>
-              <div>
-                Anasuya Sesha Roopa Devi Bhima, University Ave East, Canada
-              </div>
-              <div>Dr. Shiguo Lian, Telecom R&amp;D, Orange Labs, Chaina</div>
-              <div>
-                Dr. Adeleke Oluseye Adeniyi, Ledoke Akintola University of
-                Technology, Gbomoso, Nigeria
-              </div>
-              <div>
-                Prof. Sattar J Aboud, IT Advisor, Iraqi Concill of
-                Representative, Iraq
-              </div>
-              <div>
-                Prof. Salhuddin Khan, King Saudi University, Saudi Arabia
-              </div>
-              <div>
-                Dr S V Rao, Indian Institute of Technology Guwahati, India
-              </div>
-              <div>
-                Dr R Dhana Lakshmi, NITPY Campus, Thiruvettakudy, Puducherry,
-                India
-              </div>
-              <div>T. Rama Krishnudu, NIT Warangal, India</div>
-              <div>Dr. C. Krishna Mohan, IIT, Hyderabad, India</div>
-              <div>Dr. K. Chandrasekharan, NIT Surathkal, Karnataka, India</div>
-              <div>Dr. D. Vsumathi, JNTUH, Telangana, India</div>
-            </div>
+            <div id="technical-section"></div>
           </div>
         </div>
       </section>

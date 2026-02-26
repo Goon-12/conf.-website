@@ -55,15 +55,34 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16 md:h-20">
             <a href="index.html" class="flex items-center gap-3 group">
+              <!-- VIT Logo - Light -->
               <img
                 src="vitaplogored.png"
                 alt="VIT-AP Logo"
-                class="h-10 md:h-12 object-contain rounded bg-white p-1 shadow-md group-hover:shadow-lg transition-shadow"
+                class="h-10 md:h-12 object-contain transition-all duration-300 block dark:hidden group-hover:scale-105"
               />
+
+              <!-- VIT Logo - Dark -->
+              <img
+                src="vitaplogo_dark.png"
+                alt="VIT-AP Logo Dark"
+                class="h-10 md:h-12 object-contain transition-all duration-300 hidden dark:block group-hover:scale-105"
+              />
+
+              <!-- ICETT Logo -->
               <div class="hidden sm:block">
+                <!-- Light -->
                 <img
                   src="./icettlogo.png"
-                  class="h-10 md:h-12 object-contain rounded bg-white p-1 shadow-md group-hover:shadow-lg transition-shadow"
+                  alt="ICETT Logo"
+                  class="h-10 md:h-12 object-contain transition-all duration-300 block dark:hidden group-hover:scale-105"
+                />
+
+                <!-- Dark -->
+                <img
+                  src="./icettlogo_dark.png"
+                  alt="ICETT Logo Dark"
+                  class="h-10 md:h-12 object-contain transition-all duration-300 hidden dark:block group-hover:scale-105"
                 />
               </div>
             </a>
@@ -411,136 +430,141 @@
       </section>
 
       <!-- Footer -->
-      <footer
-        class="bg-white dark:bg-[#0b0f17] border-t border-[#f0f2f4] dark:border-gray-800 pt-16 pb-8 mt-auto"
-      >
-        <div class="layout-container max-w-[1280px] mx-auto px-4 md:px-10">
+      <footer class="bg-slate-900 dark:bg-slate-950 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16"
           >
-            <!-- Col 1: Brand -->
-            <div class="flex flex-col gap-4">
-              <div class="flex items-center gap-2 text-primary dark:text-white">
-                <span class="material-symbols-outlined text-3xl"
+            <!-- Brand -->
+            <div class="lg:col-span-1">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="material-symbols-outlined text-primary text-3xl"
                   >neurology</span
                 >
-                <span class="text-xl font-bold tracking-tight">ICETT '26</span>
+                <span class="font-display text-xl font-bold">ICETT '26</span>
               </div>
-              <p
-                class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed"
-              >
-                The leading international conference for Artificial Intelligence
-                research, bridging theory and practice.
+              <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                International Conference on Emerging Trends and Transformations
+                in Artificial Intelligence
+              </p>
+              <p class="text-slate-500 text-sm">
+                VIT-AP University, Amaravati, Andhra Pradesh
               </p>
             </div>
-            <!-- Col 2: Links -->
-            <div class="flex flex-col gap-4">
-              <h4 class="text-[#111318] dark:text-white font-bold text-base">
-                Quick Links
-              </h4>
-              <ul class="flex flex-col gap-2">
+
+            <!-- Quick Links -->
+            <div>
+              <h4 class="font-bold text-base mb-4">Quick Links</h4>
+              <ul class="space-y-2">
                 <li>
                   <a
-                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
                     href="call-for-papers.html"
+                    class="text-slate-400 hover:text-primary text-sm transition-colors"
                     >Call for Papers</a
                   >
                 </li>
                 <li>
                   <a
-                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
                     href="committee.html"
+                    class="text-slate-400 hover:text-primary text-sm transition-colors"
                     >Committee</a
                   >
                 </li>
                 <li>
                   <a
-                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
                     href="registration.html"
+                    class="text-slate-400 hover:text-primary text-sm transition-colors"
                     >Registration</a
                   >
                 </li>
                 <li>
                   <a
-                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
                     href="venue.html"
+                    class="text-slate-400 hover:text-primary text-sm transition-colors"
                     >Venue</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="program.html"
+                    class="text-slate-400 hover:text-primary text-sm transition-colors"
+                    >Program</a
                   >
                 </li>
               </ul>
             </div>
-            <!-- Col 3: Legal -->
-            <div class="flex flex-col gap-4">
-              <h4 class="text-[#111318] dark:text-white font-bold text-base">
-                Legal
-              </h4>
-              <ul class="flex flex-col gap-2">
+
+            <!-- Legal -->
+            <div>
+              <h4 class="font-bold text-base mb-4">Legal</h4>
+              <ul class="space-y-2">
                 <li>
                   <a
-                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
                     href="#"
+                    class="text-slate-400 hover:text-primary text-sm transition-colors"
                     >Privacy Policy</a
                   >
                 </li>
                 <li>
                   <a
-                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
                     href="#"
+                    class="text-slate-400 hover:text-primary text-sm transition-colors"
                     >Terms of Service</a
                   >
                 </li>
                 <li>
                   <a
-                    class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
                     href="#"
+                    class="text-slate-400 hover:text-primary text-sm transition-colors"
                     >Code of Conduct</a
                   >
                 </li>
               </ul>
             </div>
-            <!-- Col 4: Contact -->
-            <div class="flex flex-col gap-4">
-              <h4 class="text-[#111318] dark:text-white font-bold text-base">
-                Contact Us
-              </h4>
-              <div class="flex flex-col gap-2">
+
+            <!-- Contact -->
+            <div>
+              <h4 class="font-bold text-base mb-4">Contact Us</h4>
+              <div class="space-y-3">
                 <a
-                  class="flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-primary text-sm"
                   href="https://www.icett.in"
+                  class="flex items-center gap-2 text-slate-400 hover:text-primary text-sm transition-colors"
                 >
-                  <span class="material-symbols-outlined text-sm"
+                  <span class="material-symbols-outlined text-lg"
                     >language</span
                   >
                   www.icett.in
                 </a>
-                <div
-                  class="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm"
-                >
-                  <span class="material-symbols-outlined text-sm"
+                <div class="flex items-center gap-2 text-slate-400 text-sm">
+                  <span class="material-symbols-outlined text-lg"
                     >location_on</span
                   >
-                  VIT-AP University, Amaravati
+                  VIT-AP University, Amaravati, Andhra Pradesh
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- Bottom Bar -->
           <div
-            class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-100 dark:border-gray-800 gap-4"
+            class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-slate-800 gap-4"
           >
-            <p class="text-gray-400 text-sm">
-              © 2026 ICETT. All rights reserved.
+            <p class="text-slate-500 text-sm">
+              &copy; 2026 ICETT. All rights reserved.
             </p>
             <div class="flex gap-4">
               <a
-                class="text-gray-400 hover:text-primary transition-colors"
                 href="#"
-                ><span class="material-symbols-outlined">public</span></a
+                class="text-slate-400 hover:text-primary transition-colors"
               >
+                <span class="material-symbols-outlined">public</span>
+              </a>
               <a
-                class="text-gray-400 hover:text-primary transition-colors"
                 href="#"
-                ><span class="material-symbols-outlined">share</span></a
+                class="text-slate-400 hover:text-primary transition-colors"
               >
+                <span class="material-symbols-outlined">share</span>
+              </a>
             </div>
           </div>
         </div>

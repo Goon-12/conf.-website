@@ -69,15 +69,34 @@
           <div class="flex items-center justify-between h-16 md:h-20">
             <!-- Logo -->
             <a href="index.html" class="flex items-center gap-3 group">
+              <!-- VIT Logo - Light -->
               <img
                 src="vitaplogored.png"
                 alt="VIT-AP Logo"
-                class="h-10 md:h-12 object-contain rounded bg-white p-1 shadow-md group-hover:shadow-lg transition-shadow"
+                class="h-10 md:h-12 object-contain transition-all duration-300 block dark:hidden group-hover:scale-105"
               />
+
+              <!-- VIT Logo - Dark -->
+              <img
+                src="vitaplogo_dark.png"
+                alt="VIT-AP Logo Dark"
+                class="h-10 md:h-12 object-contain transition-all duration-300 hidden dark:block group-hover:scale-105"
+              />
+
+              <!-- ICETT Logo -->
               <div class="hidden sm:block">
+                <!-- Light -->
                 <img
                   src="./icettlogo.png"
-                  class="h-10 md:h-12 object-contain rounded bg-white p-1 shadow-md group-hover:shadow-lg transition-shadow"
+                  alt="ICETT Logo"
+                  class="h-10 md:h-12 object-contain transition-all duration-300 block dark:hidden group-hover:scale-105"
+                />
+
+                <!-- Dark -->
+                <img
+                  src="./icettlogo_dark.png"
+                  alt="ICETT Logo Dark"
+                  class="h-10 md:h-12 object-contain transition-all duration-300 hidden dark:block group-hover:scale-105"
                 />
               </div>
             </a>
